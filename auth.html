@@ -20,9 +20,26 @@
     <nav class="main-nav" id="mainNav">
         <ul class="menu">
             <li><a href="index.html">صفحه اصلی</a></li>
-            <li><a href="products.html">محصولات</a></li>
+            <li class="has-mega">
+                <a href="products.html">محصولات</a>
+                <div class="mega-menu glass">
+                    <div class="mega-column">
+                        <h4>دسته‌بندی‌ها</h4>
+                        <a href="products.html#cp">سیپی</a>
+                        <a href="products.html#offer">آفر سیپی</a>
+                        <a href="products.html#double">سیپی دوبل</a>
+                    </div>
+                    <div class="mega-column">
+                        <h4>لینک‌های مهم</h4>
+                        <a href="cart.html">سبد خرید</a>
+                        <a href="checkout.html">پرداخت</a>
+                        <a href="login.html">ورود</a>
+                        <a href="register.html">ثبت نام</a>
+                    </div>
+                </div>
+            </li>
             <li><a href="cart.html">سبد خرید</a></li>
-            <li><a href="checkout.html" class="active">پرداخت</a></li>
+            <li><a href="checkout.html">پرداخت</a></li>
         </ul>
     </nav>
 
@@ -31,10 +48,10 @@
             <input type="text" placeholder="جستجوی سیپی، آفر، محصول...">
             <button type="submit">جستجو</button>
         </form>
-        <a href="auth.html" class="btn-login">ورود / ثبت نام</a>
+        <a href="login.html" class="btn-login">ورود</a>
+        <a href="register.html" class="btn-login">ثبت نام</a>
     </div>
 </header>
-
 <main class="checkout-page">
     <h1>تکمیل اطلاعات و پرداخت</h1>
     <form class="checkout-form glass">

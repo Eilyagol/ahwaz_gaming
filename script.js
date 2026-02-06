@@ -198,3 +198,35 @@ if (registerForm) {
         }
     });
 }
+// ثبت نام
+document.getElementById("registerForm")?.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let email = document.getElementById("regEmail").value.trim();
+    let phone = document.getElementById("regPhone").value.trim();
+    let pass = document.getElementById("regPass").value.trim();
+    let msg = document.getElementById("registerMessage");
+
+    if (email === ""  phone === ""  pass === "") {
+        msg.innerHTML = "<div class='error-msg'>لطفاً همه فیلدها را پر کنید</div>";
+        return;
+    }
+
+    msg.innerHTML = "<div class='success-msg'>ثبت نام با موفقیت انجام شد ✔</div>";
+});
+
+// ورود
+document.getElementById("loginForm")?.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let user = document.getElementById("loginUser").value.trim();
+    let pass = document.getElementById("loginPass").value.trim();
+    let msg = document.getElementById("loginMessage");
+
+    if (user === "" || pass === "") {
+        msg.innerHTML = "<div class='error-msg'>لطفاً همه فیلدها را پر کنید</div>";
+        return;
+    }
+
+    msg.innerHTML = "<div class='success-msg'>ورود با موفقیت انجام شد ✔</div>";
+});

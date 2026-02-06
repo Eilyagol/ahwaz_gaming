@@ -20,7 +20,24 @@
     <nav class="main-nav" id="mainNav">
         <ul class="menu">
             <li><a href="index.html">صفحه اصلی</a></li>
-            <li><a href="products.html">محصولات</a></li>
+            <li class="has-mega">
+                <a href="products.html">محصولات</a>
+                <div class="mega-menu glass">
+                    <div class="mega-column">
+                        <h4>دسته‌بندی‌ها</h4>
+                        <a href="products.html#cp">سیپی</a>
+                        <a href="products.html#offer">آفر سیپی</a>
+                        <a href="products.html#double">سیپی دوبل</a>
+                    </div>
+                    <div class="mega-column">
+                        <h4>لینک‌های مهم</h4>
+                        <a href="cart.html" class="active">سبد خرید</a>
+                        <a href="checkout.html">پرداخت</a>
+                        <a href="login.html">ورود</a>
+                        <a href="register.html">ثبت نام</a>
+                    </div>
+                </div>
+            </li>
             <li><a href="cart.html" class="active">سبد خرید</a></li>
             <li><a href="checkout.html">پرداخت</a></li>
         </ul>
@@ -31,17 +48,36 @@
             <input type="text" placeholder="جستجوی سیپی، آفر، محصول...">
             <button type="submit">جستجو</button>
         </form>
-        <a href="auth.html" class="btn-login">ورود / ثبت نام</a>
+        <a href="login.html" class="btn-login">ورود</a>
+        <a href="register.html" class="btn-login">ثبت نام</a>
     </div>
 </header>
 
 <main class="cart-page">
     <h1>سبد خرید شما</h1>
-    <div id="cartItems"></div>
-    <div class="cart-summary glass">
-        <p>مجموع: <span id="cartTotal">0</span> تومان</p>
-        <a href="checkout.html" class="btn-primary">ادامه به پرداخت</a>
-    </div>
+
+    <section class="cart-section glass">
+        <h2>محصولات انتخاب شده</h2>
+        <div id="cartItems"></div>
+    </section>
+
+    <section class="cart-layout">
+        <div class="cart-summary glass">
+            <h3>خلاصه سفارش</h3>
+            <p>مجموع مبلغ: <span id="cartTotal">0</span> تومان</p>
+            <p class="cart-note">در مرحله بعد، اطلاعات اکانت و روش پرداخت را وارد می‌کنید.</p>
+            <a href="checkout.html" class="btn-primary">ادامه به مرحله پرداخت</a>
+        </div>
+
+        <div class="cart-info glass">
+            <h3>راهنمای سبد خرید</h3>
+            <ul>
+                <li>محصولات را از صفحه <a href="products.html">محصولات</a> انتخاب کنید.</li>
+                <li>در صورت نیاز می‌توانید هر آیتم را از سبد حذف کنید.</li>
+                <li>در مرحله پرداخت، UID بازی و روش پرداخت را وارد می‌کنید.</li>
+            </ul>
+        </div>
+    </section>
 </main>
 
 <footer class="main-footer">
