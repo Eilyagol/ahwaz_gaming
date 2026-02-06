@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>سبد خرید | Ahwaz Gaming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="main-header sticky glass">
+    <div class="logo">
+        <a href="index.html">
+            <span class="logo-main">Ahwaz</span><span class="logo-sub">Gaming</span>
+        </a>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn">☰</button>
+
+    <nav class="main-nav" id="mainNav">
+        <ul class="menu">
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="products.html">محصولات</a></li>
+            <li><a href="cart.html" class="active">سبد خرید</a></li>
+            <li><a href="checkout.html">پرداخت</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-actions">
+        <form class="search-form">
+            <input type="text" placeholder="جستجوی سیپی، آفر، محصول...">
+            <button type="submit">جستجو</button>
+        </form>
+        <a href="auth.html" class="btn-login">ورود / ثبت نام</a>
+    </div>
+</header>
+
+<main class="cart-page">
+    <h1>سبد خرید شما</h1>
+    <div id="cartItems"></div>
+    <div class="cart-summary glass">
+        <p>مجموع: <span id="cartTotal">0</span> تومان</p>
+        <a href="checkout.html" class="btn-primary">ادامه به پرداخت</a>
+    </div>
+</main>
+
+<footer class="main-footer">
+    <div class="footer-columns">
+        <div class="footer-col">
+            <h4>Ahwaz Gaming</h4>
+            <ul>
+                <li><a href="index.html">صفحه اصلی</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="cart.html">سبد خرید</a></li>
+                <li><a href="checkout.html">پرداخت</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>شبکه‌های اجتماعی</h4>
+            <ul class="social-list">
+                <li><a href="#">اینستاگرام</a></li>
+                <li><a href="#">تلگرام</a></li>
+                <li><a href="#">دیسکورد</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="footer-copy">تمامی حقوق برای Ahwaz Gaming محفوظ است.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

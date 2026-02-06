@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>محصولات | Ahwaz Gaming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="main-header sticky glass">
+    <div class="logo">
+        <a href="index.html">
+            <span class="logo-main">Ahwaz</span><span class="logo-sub">Gaming</span>
+        </a>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn">☰</button>
+
+    <nav class="main-nav" id="mainNav">
+        <ul class="menu">
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li class="has-mega">
+                <a href="products.html" class="active">محصولات</a>
+                <div class="mega-menu glass">
+                    <div class="mega-column">
+                        <h4>دسته‌بندی‌ها</h4>
+                        <a href="#cp">سیپی</a>
+                        <a href="#offer">آفر سیپی</a>
+                        <a href="#double">سیپی دوبل</a>
+                    </div>
+                    <div class="mega-column">
+                        <h4>لینک‌های مهم</h4>
+                        <a href="cart.html">سبد خرید</a>
+                        <a href="checkout.html">پرداخت</a>
+                        <a href="auth.html">ورود / ثبت نام</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="cart.html">سبد خرید</a></li>
+            <li><a href="checkout.html">پرداخت</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-actions">
+        <form class="search-form">
+            <input type="text" placeholder="جستجوی سیپی، آفر، محصول...">
+            <button type="submit">جستجو</button>
+        </form>
+        <a href="auth.html" class="btn-login">ورود / ثبت نام</a>
+    </div>
+</header>
+
+<main class="products-page">
+    <h1>محصولات کالاف دیوتی موبایل</h1>
+
+    <!-- سیپی -->
+    <section id="cp" class="product-category">
+        <h2>سیپی</h2>
+        <div class="product-grid">
+            <div class="product-card glass">
+                <img src="https://i.imgur.com/5b0Qv7x.png" alt="80 CP">
+                <h3>80 CP</h3>
+                <p>مناسب برای خریدهای کوچک و تستی.</p>
+                <span class="price">70,000 تومان</span>
+                <button class="btn-primary add-to-cart" data-name="80 CP" data-price="70000">افزودن به سبد</button>
+            </div>
+            <div class="product-card glass">
+                <img src="https://i.imgur.com/5b0Qv7x.png" alt="420 CP">
+                <h3>420 CP</h3>
+                <p>انتخاب مناسب برای اسکین‌ها و باندل‌ها.</p>
+                <span class="price">320,000 تومان</span>
+                <button class="btn-primary add-to-cart" data-name="420 CP" data-price="320000">افزودن به سبد</button>
+            </div>
+            <div class="product-card glass">
+                <img src="https://i.imgur.com/5b0Qv7x.png" alt="880 CP">
+                <h3>880 CP</h3>
+                <p>مناسب برای بتل پس و چند خرید دیگر.</p>
+                <span class="price">620,000 تومان</span>
+                <button class="btn-primary add-to-cart" data-name="880 CP" data-price="620000">افزودن به سبد</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- آفر سیپی -->
+    <section id="offer" class="product-category">
+        <h2>آفر سیپی</h2>
+        <div class="product-grid">
+            <div class="product-card glass">
+                <img src="https://i.imgur.com/9bQ0b0P.png" alt="500 CP Offer">
+                <h3>آفر ویژه 500 CP</h3>
+                <p>آفر محدود با قیمت استثنایی.</p>
+                <span class="price">350,000 تومان</span>
+                <button class="btn-primary add-to-cart" data-name="آفر 500 CP" data-price="350000">افزودن به سبد</button>
+            </div>
+            <div class="product-card glass">
+                <img src="https://i.imgur.com/9bQ0b0P.png" alt="1000 CP Offer">
+                <h3>آفر 1000 CP</h3>
+                <p>بهترین انتخاب اقتصادی برای پلیرهای فعال.</p>
+                <span class="price">650,000 تومان</span>
+                <button class="btn-primary add-to-cart" data-name="آفر 1000 CP" data-price="650000">افزودن به سبد</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- سیپی دوبل -->
+    <section id="double" class="product-category">
+        <h2>سیپی دوبل</h2>
+        <div class="product-grid">
+            <div class="product-card glass">
+                <img src="https://i.imgur.com/3uZQv7x.png" alt="500 CP Double">
+                <h3>500 CP دوبل</h3>
+                <p>دریافت دو برابر سیپی در یک خرید.</p>
+                <span class="price">900,000 تومان</span>
+                <button class="btn-primary add-to-cart" data-name="500 CP دوبل" data-price="900000">افزودن به سبد</button>
+            </div>
+            <div class="product-card glass">
+                <img src="https://i.imgur.com/3uZQv7x.png" alt="1000 CP Double">
+                <h3>1000 CP دوبل</h3>
+                <p>مناسب برای اسکین‌های خاص و Mythic.</p>
+                <span class="price">1,600,000 تومان</span>
+                <button class="btn-primary add-to-cart" data-name="1000 CP دوبل" data-price="1600000">افزودن به سبد</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="main-footer">
+    <div class="footer-columns">
+        <div class="footer-col">
+            <h4>Ahwaz Gaming</h4>
+            <ul>
+                <li><a href="index.html">صفحه اصلی</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="cart.html">سبد خرید</a></li>
+                <li><a href="checkout.html">پرداخت</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>دسته‌بندی‌ها</h4>
+            <ul>
+                <li><a href="#cp">سیپی</a></li>
+                <li><a href="#offer">آفر سیپی</a></li>
+                <li><a href="#double">سیپی دوبل</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>شبکه‌های اجتماعی</h4>
+            <ul class="social-list">
+                <li><a href="#">اینستاگرام</a></li>
+                <li><a href="#">تلگرام</a></li>
+                <li><a href="#">دیسکورد</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="footer-copy">تمامی حقوق برای Ahwaz Gaming محفوظ است.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
